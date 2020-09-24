@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import "001.external.css";
+span {
+	border: medium red solid;
+	font-size: x-large;
+	height: 20px;
+	padding: 4px;
+	text-decoration: underline;
+	width: calc(40px-100%);
+}
+
+in {
+	font-size: 1in;
+	background-color: blue;
+	border:thin black solid;
+}
+
+cm {
+	font-size: 1cm;
+	background-color: blue;
+	border:thin black solid;
+}
+
+mm {
+	font-size: 20mm;
+	background-color: blue;
+	border:thin black solid;
+}
+
+pt {
+	font-size: 1pt;
+	background-color: blue;
+	border:thin black solid;
+}
+
+pc {
+	font-size: 1pc;
+	background: blue;
+	border:thin black solid;
+}

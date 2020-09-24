@@ -1,0 +1,282 @@
+<!DOCTYPE HTML><!-- HTML is a bool property -->
+<html>
+	<!-- elements goes here -->
+	<head>
+		<!-- metadata goes here -->
+		<meta charset="UTF-8" />
+		<title>Learning.html5</title>
+		<style type="text/css">
+.class1 {
+	background-color:grey;
+	color:white;
+	padding:2px;
+	margin:4px;
+}
+.class2 {
+	font-size:x-large;
+}
+		</style>
+	</head>
+	<body>
+		<!-- content goes here -->
+		<a class="link" id="we-5_link" href="http://we-5.cn/">We - Five</a>
+		<div style="width:200px; height:200px; background:red; padding:10px; border:2px solid black; margin:10px">div style</div>
+		<div onclick="this.style.width='400px';" style="width:200px; height:100px; transition:2s; background:gray;">JavaScript onclick</div>
+		<img src="lim.png" alt="LIM.PNG" /><!-- Single label -->
+		<a class="class1 class2" href="#" target="_blank">a Label</a>
+		<base target="_blank" />
+		<a href="#">a Label base</a>
+	<script type="text/javascript">
+		var elems = document.getElementsByClassName("class2");
+for (i = 0; i < elems.length; i++) {
+	var x = elems[i];
+	x.style.border = "thin solid black";
+	x.style.backgroundColor = "white";
+	x.style.color = "red";
+}
+	</script>
+		<p contenteditable="true">This is editable p element.</p>
+		<p dir="rtl" contenteditable="true">This is editable p element.</p>
+		<p dir="ltr" contenteditable="true">This is editable p element.</p>
+		<a href="#" target="_self">a Label _self</a>
+		<button onclick="toggleHidden()">Toggle</button>
+	<script type="text/javascript">
+		var toggleHidden = function() {
+			var elem = document.getElementById("toggle");
+			if (elem.hasAttribute("hidden")) {
+				elem.removeAttribute("hidden");
+			} else {
+				elem.setAttribute("hidden", "hidden");
+			}
+		}
+	</script>
+		<a id="toggle" hidden="false" href="lim.png">a Label download</a><!-- false will not work since hidden is a bool property -->
+		<br />
+		<table>
+			<tr><th>Name</th><th>City</th></tr>
+			<tr><td>sib</td><td>LIM</td></tr>
+		</table>
+		<br />
+		<p lang="en">English</p>
+		<p lang="zh">Chinese</p>
+		<br />
+		<textarea spellcheck="true">This is mispelled text</textarea>
+		<br />
+		<a href="#box1">one</a>
+		<a href="#box2">two</a>
+		<a href="#box3">three</a>
+		<hr>
+		<hr />
+		<code>main()</code> is the main function of C language.
+		<br />
+		< &lt; &#60;
+		<br />
+		> &gt; &#62;
+		<br />
+		& &amp; &#38;
+		<br />
+		&euro;
+		&pound;
+		&sect;
+		&copy;
+		&reg;
+		&trade;
+		<br />
+		<code/>
+			<br />
+			Enter your name: <input enable accesskey="I">
+			Enter your name2: <input tabindex="2" enabled>
+			Enter your name1: <input tabindex="1" enabled="">
+			Enter your name-1: <input title="this will not tab selected" tabindex="-1" enabled="enabled">
+			Enter your name3: <input tabindex="3" enabled="true" data-creator="sib" data-purpose="input"><!-- data- is customer property -->
+			<br />
+			<textarea>
+				Property that not used:<br />
+				contextmenu<br />
+				draggable<br />
+				dropzone<br />
+			</textarea>
+		<div style="height:1000px;" id="box1">
+			one<br /><!-- Change to next line -->
+			......
+		</div>
+		<div style="height:1000px;" id="box2">
+			two<br /><!-- Change to next line -->
+			......
+		</div>
+		<div style="height:1000px;" id="box3">
+			three<br /><!-- Change to next line -->
+			......
+		</div>
+		<p>there is another element <span>span</span></p>
+		<!-- 
+		element embedded style
+		document embedded style
+		external style sheet
+		-->
+		<a style="color:red">element embedded style</a><br />
+<style type="text/css">
+span {
+	border: thin black solid;
+}
+</style><!-- document embedded style -->
+
+<link rel="stylesheet" type="text/css" href="../Learning.css3/000.index.css"></link> <!-- external style sheet -->
+<link rel="stylesheet" type="text/css" href="../Learning.css3/001.external.css"></link> <!-- external style sheet -->
+<!-- 
+customer style
+browser style
+-->
+<in>1in height</in><br />
+<cm>1cm height</cm><br />
+<mm>20mm height</mm><br />
+<pt>1pt height</pt><br />
+<pc>1pc height</pc><br />
+<!-- JavaScript Learning goes here -->
+	<script type="text/javascript">
+		document.writeln("Hello, this is JavaScript.");
+		document.writeln("This is another JavaScript line");
+function jsfunc() {
+	document.writeln("This is a JavaScript function line");
+};
+
+jsfunc();
+
+function jsfuncArg(name, weather) {
+	document.writeln("Hello " + name + ".");
+	document.writeln("The weather is " + weather + " today.");
+	return ("Bye, " + name + ".");
+};
+
+jsfuncArg("sib", "sunny");
+document.writeln(jsfuncArg("sib", "sunny"));
+
+var myGlobalVar = "sib@LIM";
+function myVarFunc() {
+	var LocalVar = "This is the value of the Local Var";
+	return(LocalVar);
+};
+function GloVarFunc() {
+	return(myGlobalVar);
+};
+document.writeln(myVarFunc());
+document.writeln(GloVarFunc());
+document.writeln("I try to refer the Local var" + "LocalVar");
+<!-- Data type goes here -->
+var string1 = "this is string one.";
+var string2 = 'this is string two.';
+var boolean1 = false;
+var boolean2 = true;
+var number1 = 10;
+var number2 = 3.14;
+var number3 = 0xFF00;
+<!-- Object creation learning here -->
+var myData = new Object();
+myData.name = "sib";
+myData.weather = "sunny";
+document.writeln(string1);
+document.writeln(string2);
+document.writeln(boolean1);
+document.writeln(boolean2);
+document.writeln(number1);
+document.writeln(number2);
+document.writeln(number3);
+document.writeln(myData.name);
+document.writeln(myData.weather);
+<!-- Then is still Object creation -->
+var mydata = {
+	name: "sib",
+	weather: "good"
+};
+document.writeln(mydata.weather);
+document.writeln(myData.weather);
+var myfundata = {
+	sayhello: function() {
+		document.writeln("Hello");
+	}
+}
+myfundata.sayhello();<!-- it is called method of the Object that is just a function. -->
+myData.name = "lea";
+myData["weather"] = "cloudy";
+document.writeln(myData.name);
+document.writeln(myData.weather);
+for(var prop in myData) {
+	document.writeln("property name:" + prop + " value is:" + myData[prop]);
+};
+mydata.newproperty = "this is new property of mydata";
+mydata.newmethod = function() {
+	document.writeln("This is a new method of mydata.")
+}
+document.writeln(mydata.newproperty);
+mydata.newmethod();
+delete mydata.name;
+var hasname = "name" in mydata;
+document.writeln(hasname);
+var hasweather = "weather" in mydata;
+document.writeln(hasweather);
+var nfive = 5;
+var sfive = "5";
+if (nfive == sfive) {
+	document.writeln("they are same");
+}else{
+	document.writeln("they are not same");
+};
+
+if (nfive === sfive) {
+	document.writeln("they are same");
+}else{
+	document.writeln("they are not same");
+};
+<!-- == & === returns false if two Object was not refer to the same one. -->
+<!-- learning the toString method -->
+var six = (6).toString();
+var six = (6).toString(2);
+var six = (6).toString(8);
+var six = (6).toString(16);
+var six = (6).toFixed(2);
+var six = (6).toExponential(2);
+var six = (6).toPrecision(2);
+<!-- learning the number method -->
+var num = Number("6");
+var sum = num + 4;
+document.writeln(sum);
+<!-- another method for number -->
+var inum = parseInt("6");
+var fnum = parseFloat("6.6");
+document.writeln(inum);
+document.writeln(fnum);
+<!-- learning the Array -->
+var myArray = new Array();
+myArray[0] = 100;
+myArray[1] = "sib";
+myArray[2] = true;
+var myOtherArray = [200, "sib", true];
+myOtherArray[0] = "lea";
+document.writeln(myOtherArray[0]);
+for (i=0; i < myOtherArray.length; i++) {
+	document.writeln(i + ":" + myOtherArray[i]);
+};
+try {
+	var noArray;
+	for (i=0; i<noArray.length; i++) {
+		document.writeln("Index " + i + ": " + myArray[i]);
+	}
+} catch (e) {
+	document.writeln("Error: " + e);
+	document.writeln("Error_message: " + e.message);
+	document.writeln("Error_name: " + e.name);
+	document.writeln("Error_number: " + e.number);
+} finally {
+	document.writeln("Statements here are always executed.");
+}
+if (!null) {
+	document.writeln("it is null");
+};
+if (!undefined) {
+	document.writeln("it is undefined");
+};
+document.writeln(null == undefined);
+document.writeln(null === undefined);
+	</script>
+	</body>
+</html>

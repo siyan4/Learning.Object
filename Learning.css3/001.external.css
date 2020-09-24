@@ -1,0 +1,11 @@
+a {
+	background-color: hsla(120, 100%, 22%, 0.4);
+	color: hsl(120, 100%, 22%) ;
+}
+span {
+	border: inherit !important;
+	padding: 10px;
+	color: rgb(169, 169, 169);
+	background-color: rgba(169, 169, 169, 0.4);
+
+}
